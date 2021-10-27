@@ -227,7 +227,7 @@ std::ostream& operator<<(std::ostream& out, const matrix& a)
 	{
 		for (int j = 0; j < a.get_m(); j++)
 		{
-			out << a._data[i][j] << " ";
+			out << a(i, j) << " ";
 		}
 		out << std::endl;
 	}
@@ -240,8 +240,9 @@ std::istream& operator>>(std::istream& in, matrix& a)
 		for (int j = 0; j < a.get_m(); j++)
 		{
 			std::cout << "[" << i << "][" << j << "] : ";
-			in >> a._data[i][j];
+			in >> a(i, j);
 		}
 	}
 	return in;
 }
+

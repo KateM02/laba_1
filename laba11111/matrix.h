@@ -27,8 +27,7 @@ public:
 	bool operator == (const matrix& c);
 	bool operator != (const matrix& c);
 	double finding_a_trace() const;
-
-	friend std::ostream& operator<<(std::ostream& out, const matrix& a);
-	friend std::istream& operator>>(std::istream& in, matrix& a);
 };
+std::ostream& operator<<(std::ostream& out, const matrix& a);
+std::istream& operator>>(std::istream& in, matrix& a);
 

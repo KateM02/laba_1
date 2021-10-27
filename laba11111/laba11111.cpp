@@ -149,7 +149,7 @@ void matematical_operation(matrix a)
 				std::cin >> x;
 				std::cout << "Input y";
 				std::cin >> y;
-				std::cout << "Result:" << a(x, y) << std::endl;
+				std::cout << "Result:" << b(x, y) << std::endl;
 			}
 
 		}

@@ -59,7 +59,14 @@ double& matrix :: operator() (const int n, const int m)
 	}
 	return _data[n][m];
 }
-
+const double& matrix::operator()(const int n, const int m) const
+{
+	if (m >= _m || n >= _n || m < 0 || n < 0)
+	{
+		throw std::logic_error("no such index exists");
+	}
+	return _data[n][m];
+}
 void matrix:: operator = (const matrix& c)
 {
 	for (int i = 0; i < _n; i++)

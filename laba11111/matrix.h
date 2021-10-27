@@ -17,6 +17,7 @@ public:
 	
 
 	double& operator () (const int m, const int n);
+	const double& operator () (const int m, const int n) const;
 	void operator = (const matrix& c);
 	matrix operator + (const matrix& c);
 	matrix operator - (const matrix& c);
